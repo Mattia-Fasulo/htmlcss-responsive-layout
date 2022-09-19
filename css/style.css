@@ -8,6 +8,7 @@
     --orange: #FDC15F;
     --font-l: 3rem;
     --font-m: 2.5rem;
+    --font-s: 1.5rem;
 }
 
 * {
@@ -153,12 +154,16 @@ header a{
     padding: 1rem;
 }
 
+.test-text {
+    margin: 0 2rem 0;
+}
+
 .test-cards {
     background-color: #9792E4;
     color: var(--white);
     border-radius: 20px;
-    margin-bottom: 2rem;
-    padding-bottom: 1rem;
+    padding: 1rem;
+    margin: 0 2rem 1rem;
 }
 
 .test-cards img {
@@ -166,6 +171,61 @@ header a{
     height: 200px;
     margin-top: 1.5rem;
     border-radius: 50%;
+}
+
+/* section features */
+#features {
+padding: 0 2rem;  
+text-align: center;  
+}
+
+.benefit {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+#features h2 { 
+    color: var(--white);
+    font-size: var(--font-l);
+    padding: 0 2rem;
+    margin-top: 3rem;
+}
+
+.features-cards {
+    margin-top: 3rem;
+    padding: 0 1rem;
+}
+
+.feat-card {  
+    color: var(--violet); 
+    margin: 0 2rem;
+    background-color: var(--white);
+    text-align: left;
+    padding: 0 2rem;
+    border-radius: 20px;
+    margin-bottom: 2rem;
+}
+
+.feat-card h3 {
+    font-size: var(--font-m);
+}
+
+.feat-card h4 {
+    font-size: var(--font-s);
+    margin: 1rem 0;
+}
+
+.feat-card p {
+    color: var(--black);
+    line-height: 2rem;
+}
+
+.feat-card .btn {
+    color: var(--white);
+    width: 35%;
+    border-radius: 30px;
+    margin: 1.5rem 0;
+    letter-spacing: 3px;
 }
 
 
