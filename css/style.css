@@ -7,6 +7,7 @@
     --violet: #9792E4;
     --orange: #FDC15F;
     --font-l: 3rem;
+    --font-m: 2.5rem;
 }
 
 * {
@@ -99,7 +100,7 @@ header a{
 }
 
 .plan-img  img{
-    padding: 5rem;
+    padding: 2rem;
 }
 
 .plan-img h2 {
@@ -115,9 +116,10 @@ header a{
     color: var(--black);
     margin: 1rem  2.5rem;
     background-color: var(--white);
-    border-radius: 5%;
+    border-radius: 20px;
     text-align: center;
-    padding-bottom: 4rem;
+    padding-bottom: 1rem;
+    margin-bottom: 3rem;
 }
 
 .plan-card img {
@@ -128,6 +130,42 @@ header a{
     font-style: italic;
     line-height: 2rem;
     padding: 2rem;
+}
+
+/* section testimonial */
+#testimonial {
+    padding: 0 2rem;
+}
+
+.test {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.test h2 {
+    color: var(--violet);
+    font-size: var(--font-m);
+    margin-top: 1rem;
+}
+
+.test p {
+    line-height: 2rem;
+    padding: 1rem;
+}
+
+.test-cards {
+    background-color: #9792E4;
+    color: var(--white);
+    border-radius: 20px;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+}
+
+.test-cards img {
+    width: 200px;
+    height: 200px;
+    margin-top: 1.5rem;
+    border-radius: 50%;
 }
 
 
@@ -165,6 +203,11 @@ footer {
     }
 
     #planning .plan {
+        margin-left: -0.85rem;
+        margin-right: -0.85rem;
+    }
+
+    #planning .test {
         margin-left: -0.85rem;
         margin-right: -0.85rem;
     }
