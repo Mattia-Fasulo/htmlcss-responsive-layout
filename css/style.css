@@ -1,0 +1,111 @@
+/* Common */
+:root {
+    --white: #fff;
+    --black: #333333;
+    --blu: #0084FD;
+    --light-blu: #B5DDFF;
+    --violet: #9792E4;
+    --orange: #FDC15F;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.debug {
+    border: 1px solid var(--black);
+    min-height: 50px;
+}
+
+body {
+    background-color: var(--white);
+    font-family: PT Sans;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.just-btw {
+    justify-content: space-between;
+}
+
+.align-cnt {
+    align-items: center;
+}
+
+/* headrer */
+header {
+    background-color: var(--blu); /*mettere blu*/
+    color: var(--white); 
+    padding: 1rem 2rem;
+    margin-bottom: 50px;
+    position: sticky;
+    top: 0;
+}
+
+header a{
+    color: var(--white);
+    text-decoration: none;
+}
+
+.main-menu {
+    display: none;
+}
+
+/* main */
+#planning, #features, #get {
+    background-color: var(--violet);
+}
+
+#intro {
+    padding: 0 2rem;
+}
+
+.card {
+    background-color: var(--light-blu);
+    margin-bottom: 1.5rem;
+}
+
+
+
+/* footer */
+footer {
+    background-color: var(--black); 
+}
+
+
+
+
+/* RESPONSIVE */
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 750px;
+    }
+
+    #intro .cards {
+        display: flex;
+        flex-flow: row wrap;
+        /* trucchetto per i margini */
+        margin-left: -0.75rem;
+        margin-right: -0.75rem;
+    }
+
+    #intro .card {
+        margin-left: 0.75rem;
+        margin-right: 0.75rem;
+        width: calc(33.33% - 1.5rem);
+    }
+
+    #intro .card:first-child {
+            width: calc(66.66% - 1.5rem);
+    }
+
+}
