@@ -6,6 +6,7 @@
     --light-blu: #B5DDFF;
     --violet: #9792E4;
     --orange: #FDC15F;
+    --font-l: 3rem;
 }
 
 * {
@@ -41,6 +42,17 @@ body {
     align-items: center;
 }
 
+.w-100 {
+    width: 100%;
+}
+
+.btn {
+    padding: 1rem;
+    border: none;
+    background-color: #9792E4;
+    border-radius: 50%;
+}
+
 /* headrer */
 header {
     background-color: var(--blu); /*mettere blu*/
@@ -61,6 +73,7 @@ header a{
 }
 
 /* main */
+/* section intro */
 #planning, #features, #get {
     background-color: var(--violet);
 }
@@ -72,6 +85,49 @@ header a{
 .card {
     background-color: var(--light-blu);
     margin-bottom: 1.5rem;
+}
+
+/* section planning */
+
+#planning {
+    padding: 0 2rem;
+    margin-top: 5rem;
+}
+
+.plan {
+    color: var(--white);
+}
+
+.plan-img  img{
+    padding: 5rem;
+}
+
+.plan-img h2 {
+    font-size: var(--font-l);
+    padding: 2.5rem;
+}
+
+.plan-img p {
+    padding: 0 2.5rem;
+}
+
+.plan-card {
+    color: var(--black);
+    margin: 1rem  2.5rem;
+    background-color: var(--white);
+    border-radius: 5%;
+    text-align: center;
+    padding-bottom: 4rem;
+}
+
+.plan-card img {
+    margin-bottom: 2rem;
+}
+
+.plan-card p {
+    font-style: italic;
+    line-height: 2rem;
+    padding: 2rem;
 }
 
 
@@ -106,6 +162,11 @@ footer {
 
     #intro .card:first-child {
             width: calc(66.66% - 1.5rem);
+    }
+
+    #planning .plan {
+        margin-left: -0.85rem;
+        margin-right: -0.85rem;
     }
 
 }
