@@ -6,6 +6,7 @@
     --light-blu: #B5DDFF;
     --violet: #9792E4;
     --orange: #FDC15F;
+    --grey: #D4D3F3;
     --font-l: 3rem;
     --font-m: 2.5rem;
     --font-s: 1.5rem;
@@ -48,6 +49,10 @@ body {
     width: 100%;
 }
 
+.pos-rel {
+    position: relative;
+}
+
 .btn {
     padding: 1rem;
     border: none;
@@ -63,6 +68,7 @@ header {
     margin-bottom: 50px;
     position: sticky;
     top: 0;
+    z-index: 150;
 }
 
 header a{
@@ -80,20 +86,24 @@ header a{
     background-color: var(--violet);
 }
 
+
+/* section intro */
 #intro {
     padding: 0 2rem;
 }
 
-.card {
+.intro-card {
+    padding: 2rem;
     background-color: var(--light-blu);
     margin-bottom: 1.5rem;
 }
 
+.intro-card 
+
 /* section planning */
 
 #planning {
-    padding: 0 2rem;
-    margin-top: 5rem;
+    padding: 2rem 2rem;
 }
 
 .plan {
@@ -101,26 +111,26 @@ header a{
 }
 
 .plan-img  img{
-    padding: 2rem;
+    padding: 2rem 0;
 }
 
 .plan-img h2 {
-    font-size: var(--font-l);
-    padding: 2.5rem;
+    font-size: var(--font-m);
+    padding: 2.5rem 0;
 }
 
 .plan-img p {
-    padding: 0 2.5rem;
+    line-height: 1.7rem;
+    padding: 1rem 0 0;
 }
 
 .plan-card {
     color: var(--black);
-    margin: 1rem  2.5rem;
+    margin: 4rem  0;
     background-color: var(--white);
     border-radius: 20px;
     text-align: center;
     padding-bottom: 1rem;
-    margin-bottom: 3rem;
 }
 
 .plan-card img {
@@ -154,16 +164,18 @@ header a{
     padding: 1rem;
 }
 
-.test-text {
-    margin: 0 2rem 0;
-}
+
 
 .test-cards {
     background-color: #9792E4;
     color: var(--white);
     border-radius: 20px;
     padding: 1rem;
-    margin: 0 2rem 1rem;
+    margin: 2rem 0;
+}
+
+.test-cards:last-child {
+    margin-bottom: 10rem;
 }
 
 .test-cards img {
@@ -171,11 +183,12 @@ header a{
     height: 200px;
     margin-top: 1.5rem;
     border-radius: 50%;
+    object-fit: cover;
 }
 
 /* section features */
 #features {
-padding: 0 2rem;  
+padding: 3rem 2rem;  
 text-align: center;  
 }
 
@@ -187,21 +200,18 @@ text-align: center;
 #features h2 { 
     color: var(--white);
     font-size: var(--font-l);
-    padding: 0 2rem;
-    margin-top: 3rem;
+    margin: 3rem 0 6rem;
 }
 
 .features-cards {
     margin-top: 3rem;
-    padding: 0 1rem;
 }
 
 .feat-card {  
     color: var(--violet); 
-    margin: 0 2rem;
     background-color: var(--white);
     text-align: left;
-    padding: 0 2rem;
+    padding: 3rem 2rem;
     border-radius: 20px;
     margin-bottom: 2rem;
 }
@@ -226,13 +236,139 @@ text-align: center;
     border-radius: 30px;
     margin: 1.5rem 0;
     letter-spacing: 3px;
+    min-width: 150px;
+}
+
+/* section about-us */
+#about-us {
+    padding: 2rem 2rem;
+}
+
+.about-left h2 {
+    color: var(--violet);
+    font-size: var(--font-l);
+    margin-top: 4rem;
+    padding: 1rem 0rem;
+}
+
+.about-left p {
+    line-height: 2rem;
+    padding: 1rem 0rem;
+}
+
+.about-right img {
+    width: 175px;
+    height: 175px;
+    border-radius: 50%;
+    object-fit: fill;
+    margin: 2.5rem 0 1.5rem;
+}
+
+.about-right > i {
+    color: var(--violet);
+    font-size: var(--font-l);
+    position: absolute;
+    left: 140px;
+    top: 50px;
+    z-index: 100;
+}
+
+.about-right h3 {
+    font-size: var(--font-s);
+    color: var(--violet);
+}
+
+.about-right .btn {
+    color: var(--white);
+    border-radius: 20px;
+    padding: 0.5rem;
+    margin: 2rem 0;
+}
+
+.btn i {
+    margin-right: 5px;
+}
+
+/* section get */
+#get {
+    padding: 3rem 2rem;
+    color: var(--white);
+}
+
+#get .container {
+    text-align: center;
+}
+
+#txt-g {
+    display: block;
+    color: var(--grey);
+    margin-bottom: 1.5rem;
+}
+
+#get h3 {
+    font-size: 2rem;
+}
+
+#get h2 {
+    margin-top: 2rem;
+    color: var(--orange);
+    font-size: 4rem;
+}
+
+#get p {
+    margin-top: 2rem;
+}
+
+#get .btn {
+    margin: 2rem 0;
+    background-color: var(--white);
+    color: var(--violet);
+    border-radius: 30px;
+    font-size: 1rem;
+    letter-spacing: 3px;
+    padding: 1rem 4rem;
+}
+
+#get span:last-child {
+    display: block;
+    font-style: italic;
+    font-size: 14px;
+    margin-bottom: 5rem;
+}
+
+.dots {
+   display: inline-block; 
+   height: 3px;
+   width: 3px;
+    background-color: var(--white);
+    border-radius: 50%;
+    margin-bottom: 2px;
+}
+
+#get a {
+    color: var(--white);
 }
 
 
 
 /* footer */
 footer {
+    padding: 3rem 0;
     background-color: var(--black); 
+    color: var(--white);
+}
+
+footer .container {
+    padding: 0 2rem;
+    text-align: center;
+}
+
+footer p {
+    margin: 3rem 0;
+}
+
+footer a {
+    color: var(--violet);
 }
 
 
