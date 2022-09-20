@@ -20,7 +20,8 @@
 
 .debug {
   border: 1px solid var(--black);
-  min-height: 50px;
+  min-height: 80px;
+  min-width: 80px;
 }
 
 body {
@@ -58,6 +59,13 @@ body {
   border: none;
   background-color: #9792e4;
   border-radius: 50%;
+  transition: all 2s linear;
+  cursor: pointer;
+}
+
+.btn:hover {
+  box-shadow: 1px 2px 1px var(--black);
+  opacity: 0.7;
 }
 
 .txt-cnt {
@@ -73,6 +81,7 @@ header {
   position: sticky;
   top: 0;
   z-index: 150;
+  box-shadow: 1px 2px 1px var(--black);
 }
 
 header a {
@@ -89,9 +98,41 @@ header a {
   background-color: var(--white);
   padding: 0.5rem;
   border-radius: 20px;
+  cursor: pointer;
+}
+
+.hidden-div {
+  position: absolute;
+  top: 0;
+  right: 70px;
+}
+
+.hidden-menu {
+  display: none;
+  background-color: var(--blu);
+  position: fixed;
+  padding: 40px 20px 20px;
+  top: 45px;
+  right: 0px;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  box-shadow: 2px 2px 1px var(--black);
+  z-index: 1500;
+}
+
+.hidden-menu li {
+  list-style: none;
+  padding: 10px;
+}
+
+.hamburger:hover ~ .hidden-menu {
+  display: block;
 }
 
 /* main */
+.hidden-menu:hover {
+  display: block;
+}
 /* section intro */
 #planning,
 #features,
