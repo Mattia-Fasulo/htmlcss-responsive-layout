@@ -84,6 +84,13 @@ header a {
   display: none;
 }
 
+.nav-btn a {
+  color: black;
+  background-color: var(--white);
+  padding: 0.5rem;
+  border-radius: 20px;
+}
+
 /* main */
 /* section intro */
 #planning,
@@ -533,5 +540,66 @@ footer a {
   footer .foot-div {
     margin-left: 3.85rem;
     margin-right: 3.85rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+
+  /* header */
+  .hamburger {
+    display: none;
+  }
+
+  .main-menu {
+    display: flex;
+  }
+
+  .main-menu ul {
+    display: flex;
+  }
+
+  .main-menu li {
+    list-style: none;
+    padding: 1rem;
+  }
+
+  /* planning  */
+  #planning .plan {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+    column-gap: 4rem;
+  }
+
+  .plan .plan-img {
+    width: 30%;
+  }
+
+  .plan .plan-card {
+    width: 30%;
+    margin-top: 14rem;
+  }
+
+  /* features */
+  .feat-card {
+    width: calc(32%);
+  }
+
+  /* about us */
+  .about {
+    margin: 0 4rem;
+  }
+
+  /* get */
+  #get p {
+    padding: 0 19rem;
+  }
+
+  /* footer */
+  .foot-div p {
+    margin: 2rem 10rem 5rem;
   }
 }
