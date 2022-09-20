@@ -123,6 +123,7 @@ header a {
 .hidden-menu li {
   list-style: none;
   padding: 10px;
+  min-width: 170;
 }
 
 .hamburger:hover ~ .hidden-menu {
