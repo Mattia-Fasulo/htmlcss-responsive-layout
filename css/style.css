@@ -60,6 +60,10 @@ body {
     border-radius: 50%;
 }
 
+.txt-cnt {
+    text-align: center;
+}
+
 /* headrer */
 header {
     background-color: var(--blu); /*mettere blu*/
@@ -96,9 +100,39 @@ header a{
     padding: 2rem;
     background-color: var(--light-blu);
     margin-bottom: 1.5rem;
+    border-radius: 20px;
 }
 
-.intro-card 
+.intro-card h3 {
+    color: var(--blu);
+    font-size: var(--font-s);
+}
+
+.intro-card p {
+    line-height: 2rem;
+    margin: 2rem 0;
+}
+
+.intro-card .btn {
+    color: var(--white);
+    background-color: var(--blu);
+    padding: 1rem 4rem;
+    border-radius: 30px;
+    display: block;
+}
+
+.intro-card img {
+    width: 100%;
+    margin-top: 2rem;
+    margin-bottom: -2.5rem;
+}
+
+.txt-cnt i {
+    display: block;
+    font-size: 5rem;
+    color: var(--blu);
+    margin: 1rem;
+}
 
 /* section planning */
 
@@ -380,6 +414,7 @@ footer a {
         max-width: 750px;
     }
 
+    /* intro */
     #intro .cards {
         display: flex;
         flex-flow: row wrap;
@@ -388,24 +423,45 @@ footer a {
         margin-right: -0.75rem;
     }
 
-    #intro .card {
+    #intro .intro-card {
         margin-left: 0.75rem;
         margin-right: 0.75rem;
         width: calc(33.33% - 1.5rem);
     }
 
-    #intro .card:first-child {
+    #intro .intro-card:first-child {
             width: calc(66.66% - 1.5rem);
     }
 
+    .intro-card:first-child img {
+        width: 50%;
+        margin-bottom: -272px;
+
+    }
+
+    /* planning */
     #planning .plan {
         margin-left: -0.85rem;
         margin-right: -0.85rem;
     }
 
-    #planning .test {
+
+
+
+    
+    #testimonial .test {
         margin-left: -0.85rem;
         margin-right: -0.85rem;
     }
+
+    #features .feat-card {
+        margin-left: -0.85rem;
+        margin-right: -0.85rem;
+    }
+
+    #about-us .about-left, #about-us .about-right {
+        margin-left: -0.85rem;
+        margin-right: -0.85rem;
+    } 
 
 }
