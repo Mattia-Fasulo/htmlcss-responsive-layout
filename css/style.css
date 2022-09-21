@@ -645,3 +645,10 @@ footer a {
     margin: 2rem 10rem 5rem;
   }
 }
+
+
+@media screen and (min-width: 1050px) and (max-width: 1190px) {
+  header .container {
+    max-width: 100vw;
+  }
+}
